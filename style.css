@@ -1,3 +1,12 @@
+/*==========CSS VARIABLES===========*/
+:root
+{
+    --background-color: sandybrown;
+    --background-hover-color:black;
+    --font-color:white;
+}
+
+
 *
 {
 padding: 0;
@@ -8,12 +17,14 @@ margin:0;
 
 .container
 {
+    position: absolute;
 width: 100%;
 height: 100vh;
 display: flex;
 align-items: center;
 justify-content: center;
-background-color: sandybrown;
+background-color:var(--background-color);
+
 }
 .btn
 {
@@ -30,8 +41,8 @@ background-color: sandybrown;
 {
     
     border: 2px solid;  
-    background-color: black;
-    color: white;
+    background-color: var( --background-hover-color);
+    color: var(--font-color);
 }
 .pop_up
 {width: 400px;
@@ -42,7 +53,7 @@ background-color: sandybrown;
     top:0;
     border-radius: 6px;
 transform: translate(-50%,-50%) scale(0.1);
-background: white;
+background: var(--font-color);
 visibility: hidden;
 }
 .open-popup
@@ -69,13 +80,13 @@ margin-bottom: 25px;
     width: 50%;
    font-weight: 600;
     cursor: pointer; 
-   background-color: sandybrown; 
-   color: white;
+   background-color:var(--background-color); 
+   color: var(--font-color);
 }
 .pop_up button:hover
 {
     
      
-    background-color: black;
-    color: white;
+    background-color: var( --background-hover-color);
+    color: var(--font-color);
 }
