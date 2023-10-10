@@ -90,3 +90,11 @@ margin-bottom: 25px;
     background-color: var( --background-hover-color);
     color: var(--font-color);
 }
+@media screen and (max-width:600px) and (max-width:640px){
+    .btn
+    {
+       width: 50%; 
+        font-weight: 600;
+     
+    }
+}
